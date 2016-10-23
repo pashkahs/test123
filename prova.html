@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<style>
+body
+
+
+
+a.topnav {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+}
+a:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+a:hover:after {
+	width: 100%;
+	background: white;
+}
+
+html {
+    background: url(2.gif) no-repeat center fixed;
+    background-size: cover;
+}
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: monospace;
+    background-image: url(nav-bg.png);
+
+
+
+
+}
+
+ul.topnav li {float:right}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding:  10px;
+    text-decoration: none;
+
+
+}
+
+ul.topnav li a:hover:not(.active) {background-color: rgb; text-decoration: underline;}
+ul.topnav li a.active {background-color: !transparent; font-weight:bold;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right,
+    ul.topnav li {float: none;}
+}
+</style>
+
+</head>
+<body>
+
+<ul class="topnav">
+
+
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#" class="active">Home</a></li>
+
+</ul>
+
+<div style="padding:0 16px;">
+
+</div>
+
+</body>
+</html>
